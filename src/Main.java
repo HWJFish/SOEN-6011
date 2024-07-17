@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
         String inputString=scanner.nextLine();
         String[] inputArray=inputString.split("[\\s,]+");
-        try{
+        try{// for wrong type and empty input error
             double[] numbers=new double[inputArray.length];
             for(int i=0;i<inputArray.length;i++){
                 numbers[i]=Double.parseDouble(inputArray[i]);
@@ -18,6 +18,8 @@ public class Main {
             System.out.println("There are something wrong with the input, please check if the input type or number is correct");
         }
     }
+
+    // Core function for calculation
     public static double getStandardDeviation(double[] input){
         double sum=0;
         for (double num:input){
