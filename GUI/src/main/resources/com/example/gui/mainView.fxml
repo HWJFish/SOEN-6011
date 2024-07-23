@@ -14,9 +14,9 @@
   </padding>
 
   <Text>Welcome to F8 demo: standard deviation function</Text>
-  <Text>Please enter number in integer or double, split by space or tab in the text area bellow:</Text>
-  <TextArea fx:id="inputText"/>
+  <Text>Please enter number in integer or double, split by space, tab or enter in the text area bellow:</Text>
+  <TextArea fx:id="inputText" prefHeight="300" wrapText="true" />
   <Button text="Calculate" onAction="#onCalculateButtonClick"/>
   <Label fx:id="OutputInstructionText" text="Output:"/>
-  <TextArea fx:id="outputText" editable="false"/>
+  <TextArea fx:id="outputText" prefHeight="50" editable="false"/>
 </VBox>
