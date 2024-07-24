@@ -17,7 +17,7 @@ public class MainController {
             double output=Calculation.getStandardDeviationWithString(inputText.getText());
             outputText.setText(output+"");
         }catch (NumberFormatException e){
-            showErrorMessage("You have non-numeric or empty input entered please double check!");
+            showErrorMessage("You have non-numeric or empty input entered please double check!\n"+e.getMessage());
         }catch (Exception e){
             showErrorMessage("Unknown exception with message: "+e.getMessage());
         }
