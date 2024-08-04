@@ -27,8 +27,8 @@ public class Calculation {
   }
 
   /**
-   * Self-made sqrt function to avoid math.sqrt.
-   * Using binary search Can adjust tolerance to get faster or more accurate result.
+   * Self-made sqrt function to avoid math.sqrt. Using binary search Can adjust tolerance to get
+   * faster or more accurate result.
    *
    * @param input the number need for calculation
    * @return the sqrt of the number
@@ -72,7 +72,8 @@ public class Calculation {
    * @return the standard deviation from the given input
    * @throws Exception Mostly NumberFormatException when input have wrong input type or empty input
    */
-  public static double getStandardDeviationWithString(String inputString) throws NumberFormatException {
+  public static double getStandardDeviationWithString(String inputString)
+      throws NumberFormatException {
     String[] inputArray = inputString.split("[\\s,]+");
     if (inputArray.length == 0) {
       throw new NumberFormatException("Empty String");
