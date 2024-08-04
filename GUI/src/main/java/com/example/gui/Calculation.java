@@ -2,6 +2,10 @@ package com.example.gui;
 
 public class Calculation {
 
+  private Calculation() {
+    throw new IllegalStateException("Utility class");
+  }
+
   /**
    * Core function for calculation of standard deviation.
    *
@@ -18,8 +22,8 @@ public class Calculation {
     for (double num : input) {
       sumOfSquare += (average - num) * (average - num);
     }
-    double standardDeviation = sqrt(sumOfSquare / input.length);
-    return standardDeviation;
+
+    return Math.sqrt(sumOfSquare / input.length);
   }
 
   /**
@@ -68,8 +72,8 @@ public class Calculation {
    * @return the standard deviation from the given input
    * @throws Exception Mostly NumberFormatException when input have wrong input type or empty input
    */
-  public static double getStandardDeviationWithString(String inputString) throws Exception {
-    String[] inputArray = inputString.split("[\\n\\s,]+");
+  public static double getStandardDeviationWithString(String inputString) throws NumberFormatException {
+    String[] inputArray = inputString.split("[\\s,]+");
     if (inputArray.length == 0) {
       throw new NumberFormatException("Empty String");
     }
