@@ -39,7 +39,7 @@ class CalculationTest {
   }
 
   @Test
-  public void testGetStandardDeviationWithStringThrowsException() {
+  void testGetStandardDeviationWithStringThrowsException() {
     assertThrows(NumberFormatException.class, () -> {
       Calculation.getStandardDeviationWithString("");
     });
@@ -50,7 +50,7 @@ class CalculationTest {
   }
 
   @Test
-  public void testSqrtThrowsException() {
+  void testSqrtThrowsException() {
     assertThrows(IllegalArgumentException.class, () -> {
       Calculation.sqrt(-1);
     });
