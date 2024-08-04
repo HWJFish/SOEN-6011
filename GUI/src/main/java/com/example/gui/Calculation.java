@@ -62,7 +62,7 @@ public class Calculation {
    * @return the absolute value of the input
    */
   public static double abs(double input) {
-    return input > 0 ? input : -input;
+    return input >= 0 ? input : -input;
   }
 
   /**
